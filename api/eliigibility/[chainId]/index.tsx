@@ -8,7 +8,7 @@ const handler = async (request: VercelRequest, response: VercelResponse) => {
     "s-maxage=900, stale-while-revalidate=86400",
   );
 
-  const address = "0xB2ad807Ec5Ac97C617734956760dEd85bEd345C1";
+  const address = "0xbFEaDb211974Ce290A0d8bc51b6FB230bde6bf5A";
   const chainId = 84532 as ChainId;
   //   const chainId =   request.query
   const tokens = await getUserEligibility(address, chainId);

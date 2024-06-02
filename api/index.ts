@@ -7,8 +7,10 @@ const handler = async (_request: VercelRequest, response: VercelResponse) => {
     "Cache-Control",
     "s-maxage=60, stale-while-revalidate=600",
   );
-  const address = "0xB2ad807Ec5Ac97C617734956760dEd85bEd345C1";
+  const address = "0xbFEaDb211974Ce290A0d8bc51b6FB230bde6bf5A";
   const chainId = 84532 as ChainId;
+
+  console.log("drippong  tokens starting...");
   const dripTokenResponse = await dripFaucet(address, chainId);
   console.log("drippong  tokens response", dripTokenResponse);
   return response.status(200).json(dripTokenResponse);

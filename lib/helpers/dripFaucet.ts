@@ -1,4 +1,4 @@
-import { readContract, writeContract } from "@wagmi/core";
+import { writeContract } from "@wagmi/core";
 import abi from "../contracts/faucetAbi.json";
 import { appconfig } from "../wagmiConfig";
 import { ChainId } from "../chainId";

@@ -7,7 +7,7 @@ import {
   sepoliaFaucet,
 } from "../contracts/faucetContractAddress";
 
-export const getUserEligibility = async (address: string, chainId: ChainId) => {
+const getUserEligibility = async (address: string, chainId: ChainId) => {
   const result = await readContract(appconfig, {
     abi,
     address:
@@ -18,6 +18,8 @@ export const getUserEligibility = async (address: string, chainId: ChainId) => {
 
   return result;
 };
+
+export default getUserEligibility;
 
 // Sepolia
 // Sepolia = 0xD7b8000D068795425Ce7EbA479D47D2A4850FfC9

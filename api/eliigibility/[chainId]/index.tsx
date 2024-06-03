@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
-import { getUserEligibility } from "../../../lib/helpers/userEligibility";
+import getUserEligibility from "../../../lib/helpers/userEligibility";
 import type { ChainId } from "../../../lib/chainId";
 const handler = async (request: VercelRequest, response: VercelResponse) => {
   response.setHeader(

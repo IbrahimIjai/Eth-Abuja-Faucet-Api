@@ -17,7 +17,7 @@
     "@types/node": "^20.12.11",
     "@types/ws": "^8.5.10",
     "@vercel/node": "3.0.9",
-    "@wagmi/core": "^2.10.4",
+    "@wagmi/core": "^2.10.5",
     "dotenv": "^16.4.5",
     "prisma": "^5.13.0",
     "viem": "^2.10.3",

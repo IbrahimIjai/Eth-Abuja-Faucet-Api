@@ -11,6 +11,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .vercel",
     "preinstall": "prisma generate"
   },
+  "type": "module",
   "dependencies": {
     "@neondatabase/serverless": "^0.9.3",
     "@prisma/client": "5.13.0",

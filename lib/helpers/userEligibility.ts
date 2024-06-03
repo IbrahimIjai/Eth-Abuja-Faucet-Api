@@ -1,5 +1,5 @@
 import { readContract } from "@wagmi/core";
-import abi from "../contracts/faucetAbi.json";
+import abi from "../contracts/faucetAbi.json" assert { type: "json" };
 import { appconfig } from "../wagmiConfig";
 import { ChainId } from "../chainId";
 import {
